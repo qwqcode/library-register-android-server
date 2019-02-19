@@ -1,6 +1,6 @@
 # Library Register Android Server
 
-書記 (Android)，一个适用于图书室 多人协作共同完成图书录入任务 的移动工作站
+> 書記 (Android)，一个适用于图书室 多人协作共同完成图书录入任务 的移动工作站
 
 这是 書記 (Android) 的服务器端
 
