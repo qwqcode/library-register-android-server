@@ -6,15 +6,11 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- ----------------------------
 DROP TABLE IF EXISTS `book`;
 CREATE TABLE `book`  (
-  `category_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `numbering` bigint(255) UNSIGNED NOT NULL,
-  `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `press` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `remarks` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `user` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `updated_at` datetime(0) NULL DEFAULT NULL,
-  `created_at` datetime(0) NULL DEFAULT NULL
-) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+  `category_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `category_book_data` longtext CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `registrar_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `created_at` int(11) NOT NULL
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Table structure for category
@@ -22,13 +18,10 @@ CREATE TABLE `book`  (
 DROP TABLE IF EXISTS `category`;
 CREATE TABLE `category`  (
   `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `user` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `registrar_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `remarks` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `status` int(10) UNSIGNED NOT NULL,
-  `type` int(10) UNSIGNED NOT NULL,
-  `updated_at` datetime(0) NULL,
-  `created_at` datetime(0) NULL,
-  PRIMARY KEY (`name`) USING BTREE,
+  `update_at` int(11) NOT NULL,
+  `created_at` int(11) NOT NULL,
   UNIQUE INDEX `name`(`name`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Compact;
 
