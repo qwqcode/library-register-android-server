@@ -1,5 +1,9 @@
 # Library Register Android Server
 
+<p style="text-align: center;">
+<img width="180px" src="https://user-images.githubusercontent.com/22412567/52993145-18d1b200-344e-11e9-88b2-0c034638816e.png">
+</p>
+
 > 書記 (Android)，一个适用于图书室 多人协作共同完成图书录入任务 的移动工作站
 
 这是 書記 (Android) 的服务器端
