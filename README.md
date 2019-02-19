@@ -4,9 +4,9 @@
 
 这是 書記 (Android) 的服务器端
 
-[書記 Android 客户端 传送门](https://github.com/qwqcode/library-register)
+[書記 Android 客户端 传送门](https://github.com/qwqcode/library-register-android)
 
-> 注：本 API Server 仅适用于 [書記 Android 客户端](https://github.com/qwqcode/library-register)，暂不适用于新版 [書記 Online](https://github.com/qwqcode/book-register)
+> 注：本 API Server 仅适用于 [書記 Android 客户端](https://github.com/qwqcode/library-register-android)，暂不适用于新版 [書記 Online](https://github.com/qwqcode/book-register)
 
 ## Quick Start
 
